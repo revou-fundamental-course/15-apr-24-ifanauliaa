@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Kalkulator Suhu</h1>
+      <div class="input-container">
+        <label for="inputCelsius">Celsius:</label>
+        <input type="number" id="inputCelsius" placeholder="Masukkan suhu dalam Celsius" />
+      </div>
+      <div class="buttons">
+        <button onclick="convertToFar()">Konversi</button>
+        <button onclick="reverse()">Reverse</button>
+        <button id="clearButton" onclick="reset()">Reset</button>
+      </div>
+      <br />
+      <div class="output-container">
+        <label for="outputFahrenheit">Fahrenheit:</label>
+        <input type="text" id="outputFahrenheit" readonly />
+      </div>
+      <div class="calculation-container">
+        <label for="calculation">Cara Kalkulasi:</label>
+        <textarea id="calculation" readonly></textarea>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
